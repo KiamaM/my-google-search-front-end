@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-column-gap: 5px;
+            grid-template-columns: 75px 15px 75px;
+        }
+    </style>
 </head>
 <body>
     Advanced Search
@@ -59,8 +66,11 @@
                                     <td>numbers ranging from:
                                     </td>
                                     <td>
-                                        <input type="text" name="q">
-                                        <input type="text" name="q">
+                                        <div id="container">
+                                            <input type="text" name="q">
+                                            to
+                                            <input type="text" name="q">
+                                        </div>
                                     </td>
 
                                         <td>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011

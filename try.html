@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #grid{
+
+            display: inline block;
+        }
+    </style>
 </head>
 <body>
     Advanced Search
@@ -55,22 +61,14 @@
                                     </td>
                                 </td>
                             </tr>
-                                <tr>
-                                    <td>numbers ranging from:
-                                    </td>
-                                    <td>
-                                        <input type="text" name="q">
-                                        <input type="text" name="q">
-                                    </td>
-
-                                        <td>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011
-
-                                    </td>
-                                </tr>
             </tbody>
         </table>
-     
-        Then narrow your results by...
+        <div id="grid"> 
+            <div>numbers ranging from:</div>
+            <div><input type="text" name="q"></div>
+            <div><input type="text" name="q"></div>
+            <div>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011  </div>
+        </div>
 
         <table>
             <thead> 
