@@ -3,173 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search</title>
     <style>
-        #grid{
+        .links{
+            display: block;
+            position: absolute;
+            color: gray;
+        }
+        a[href="image search.html"]{
+            top: 0px;
+            right: 20px;
+        }
+        a[href="advanced search.html"]{
+            top: 0px;
+            right: 120px; 
+        }
+        .container{
+            position:  absolute;
+            top : 0px;
+            left: 650px;
+            width: 300px;
+            height:300px;
+        }
 
-            display: inline block;
+        input[type = "text"]{
+            display: block;
+            position: relative;
+           margin: 300px auto;
+            
+        }
+        input[type="submit"]{
+            display: block;
+            position: relative;
+           margin: 340px auto;
         }
     </style>
 </head>
 <body>
-    Advanced Search
-
-    <form action="https://google.com/search" name="f">
-        <table>
-            <thead> 
-                <th>Find pages with...</th>
-                <th>        </th>     
-                <th>To do this in the search box.</th>
-
-            </thead>
-            <tbody>
-                <tr>
-                    <td>all these words</td>
-                    <td>
-                        <input type="text" name="as_q" >
-                        <td>Type the important words: tri-colour rat terrier
-                        </td>
-                    </td>
-                </tr>
-                <tr>
-                        <td>this exact word or phrase:
-                        </td>
-                        <td>
-                            <input type="text" name="as_epq">
-                            <td>Put exact words in quotes: "rat terrier"
-
-                            </td>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td>any of these words:
-                            </td>
-                            <td>
-                                <input type="text" name="as_oq">
-                                <td>Type OR between all the words you want: miniature OR standard
-
-                                </td>
-                            </td>
-                        </tr>
-                            <tr>
-                                <td>none of these words:
-                                </td>
-                                <td>
-                                    <input type="text" name="as_eq">
-                                    <td>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
-
-                                    </td>
-                                </td>
-                            </tr>
-            </tbody>
-        </table>
-        <div id="grid"> 
-            <div>numbers ranging from:</div>
-            <div><input type="text" name="q"></div>
-            <div><input type="text" name="q"></div>
-            <div>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011  </div>
+    <form action="https://www.google.com/search">
+        <div class="container">
+            <input type="text" name="q" placeholder="Search">
         </div>
-
-        <table>
-            <thead> 
-
-            </thead>
-            <tbody>
-                <tr>
-                    <td>language</td>
-                    <td>
-                        <input list="languages" name="language">
-                        <datalist id="languages">
-                            <option value="English"></option>
-                            <option value="Swahili"></option>
-                        </datalist>
-                        <td>Find pages in the language that you select.
-
-                        </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>region</td>
-                    <td>
-                        <input list="regions" name="region">
-                        <datalist id="regions">
-                            <option value="Africa"></option>
-                            <option value="EU"></option>
-                        </datalist>
-                        <td>
-                            Find pages published in a particular region.
-                        </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>time</td>
-                    <td>
-                        <input list="time" name="time">
-                        <datalist id="time">
-                            <option value="now"></option>
-                            <option value="yesterday"></option>
-                        </datalist>
-                        <td>Find pages updated within the time that you specify.
-
-                        </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>domain</td>
-                    <td>
-                        <input type="text" name="site">                        
-                        <td>
-                            Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov
-                        </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>terms</td>
-                    <td>
-                        <input list="terms" name="term">
-                        <datalist id="terms">
-                            <option value="Here"></option>
-                            <option value="There"></option>
-                        </datalist>
-                        <td>
-                            Search for terms in the whole page, page title or web address, or links to the page you're looking for.
-
-                        </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>file type</td>
-                    <td>
-                        <input list="file type" name="file type">
-                        <datalist id="file type">
-                            <option value="pdf"></option>
-                            <option value="doc"></option>
-                        </datalist>
-                        <td>
-                            Find pages in the format that you prefer.
-
-                        </td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>usage rights</td>
-                    <td>
-                        <input list="rights" name="rights">
-                        <datalist id="rights">
-                            <option value="allowed"></option>
-                            <option value="prohibited"></option>
-                        </datalist>
-                        <td>
-                            Find pages that you are free to use yourself.
-                        </td>
-                    </td>
-                </tr>
-                <tbody>
-
-            </tbody>
-        </table>
-        <button>Advanced Search</button>
+        <input type="submit" value="Google Search">
     </form>
-    <a href="index.html">Back to Search</a>
+    <a href="image search.html" class="links">Image Search</a>
+    <a href="advanced search.html" class="links">Advanced Search</a>
 </body>
 </html>

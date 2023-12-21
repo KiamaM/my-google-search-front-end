@@ -1,0 +1,91 @@
+.links{
+    display: block;
+    position: absolute;
+    color: gray;
+}
+span.G{
+    color: blue;
+}
+span.o{
+    color: red;
+}
+span.o{
+    color: yellow;
+}
+span.g{
+    color: blue;
+}
+span.l{
+    color: green;
+}
+span.e{
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a[href="image search.html"]{
+    top: 0px;
+    right: 20px;
+}
+a[href="advanced search.html"]{
+    top: 0px;
+    right: 120px; 
+}
+.text{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 100px;
+}
+.container{
+    position:  absolute;
+    top : 0px;
+    left: 550px;
+    width: 300px;
+    height:300px;
+}
+
+input[type = "text"]{
+    display: block;
+    position: relative;
+   margin: 300px auto;
+   height: 35px;
+   width: 500px;
+   border-radius: 20px;
+    
+}
+input[type="submit"]{
+    display: block;
+    position: absolute;
+   left: 750px;
+   top: 370px;
+}
+input[placeholder = "Search"]{
+    text-align: center;
+    font-size: large;
+}
+#container{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: 75px 15px 75px;
+}
+a[href="index.html"]{
+   display: block;
+   position: absolute;
+    top: 0px;
+    right: 20px;
+    color: gray;
+}
+button{
+    display: block;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    background-color: rgb(62, 62, 151);
+    color: antiquewhite;
+}
+
+
